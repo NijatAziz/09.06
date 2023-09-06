@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: #ffffff;
+    color: black;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.allheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.allheader .logo img {
+    width: 120px;
+}
+
+.firsticon{
+    margin-left: 10%;
+}
+
+.allheader .nav-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px;
+}
+
+.allheader .nav-bar a {
+    color: #070000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.allheader .register {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+#Maintext .allmain {
+    justify-content: center;
+    display: flex;
+}
+
+.allmain .text{
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.text .a{
+    font-size: 40px;
+}
+
+.text .b{
+    font-size: 40px;
+}
+
+.allmain{
+    position: relative;
+}
+
+.button{
+    position: absolute;
+    bottom: 70px;
+
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    font-size: 10px;
+}
+
+#Seller .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#Seller .container .row .sell{
+    width: 23.33%;
+    position: relative;
+    padding: 10px;
+}
+
+.sell .image{
+    width: 100%;
+}
+
+.sell .image img{
+    width: 100%;
+}
+
+.sell .title{
+    position: absolute;
+    bottom: 70px;
+    left: 80px;
+
+}
+
+.title h2{
+    color: white;
+
+}
+
+#Weekly .container .row {
+    display: flex;
+    justify-content: center;
+
+}
+
+.row .products{
+    width: 16%;
+    position: relative;
+    padding: 10px;
+}
+
+.row .products .image{
+    width: 100%;
+}
+
+.image img{
+    width: 100%;
+}
+
+.image .secound{
+    opacity: 0;
+    width: 0%;
+}
+
+.image:hover .first{
+    opacity: 0;
+    width: 0%;
+}
+
+.image:hover .secound{
+    opacity: 1;
+    width: 100%;
+
+}
+
+.buy button{
+    width: 100%;
+    padding: 6px;
+    background-color: #446084;
+    border: none;
+    color: white;
+    position: absolute;
+    bottom: 67px;
+    height: 0px;
+    opacity: 0;
+}
+
+.products:hover .buy button{
+    opacity: 1;
+    height: max-content;
+}
+
+@media (max-width: 1200px) {
+    .allheader {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 992px) {
+    .allheader {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+    
+    .allheader .nav-bar {
+        margin-top: 20px;
+    }
+    
+    .button {
+        margin-top: 20px;
+        text-align: center;
+        position: relative;
+        bottom: auto;
+    }
+    
+    #Seller .container .row .sell,
+    .row .products {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    #Seller .container .row .sell,
+    .row .products {
+        width: 45%;
+    }
+}
+
+@media (max-width: 576px) {
+    .allheader {
+        margin-left: 0;
+    }
+    
+    .firsticon {
+        margin-left: 0;
+    }
+    
+    .allheader .nav-bar {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    
+    .allmain .text {
+        margin-top: 100px;
+    }
+    
+    .button {
+        margin-top: 10px;
+        position: static;
+    }
+    
+    #Seller .container .row .sell,
+    .row .products {
+        width: 100%;
+    }
+}
